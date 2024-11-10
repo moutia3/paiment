@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="payment-container">
+        <div class="payment-methods">
+            <button class="method selected" id="credit-card">💳 Credit Card</button>
+            <button class="method" id="paypal">🅿️ Paypal</button>
+            <button class="method" id="bank-transfer">🏦 Bank Transfer</button>
+        </div>
+        <div class="message" id="message"></div>
+        <form id="payment-form">
+            <div class="form-group">
+                <label for="name">Full name (on the card)</label>
+                <input type="text" id="name" placeholder="Your full name">
+            </div>
+            <div class="form-group">
+                <label for="card-number">Card number</label>
+                <input type="text" id="card-number" placeholder="Your card number ">
+               
+            </div>
+            <div class="form-group">
+                <label for="expiration">Expiration</label>
+                <div class="expiration">
+                    <input type="text" id="exp-month" placeholder="MM"> <input type="text" id="exp-year" placeholder="YY">
+               
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="cvv">CVV <span class="tooltip">?</span></label>
+                <input type="text" id="cvv" placeholder="CVV">
+            </div>
+            <button type="submit" class="confirm-btn">Confirm</button>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

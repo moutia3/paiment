@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f9f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.payment-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.payment-methods {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+.method {
+    padding: 10px;
+    border: none;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.method.selected {
+    background-color: #007bff;
+    color: white;
+}
+
+.message {
+    background-color: #dff0d8;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    color: #3c763d;
+}
+
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.expiration input {
+    width: calc(40% - 20px);
+    display: inline-block;
+   
+}
+
+.confirm-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.confirm-btn:hover {
+    background-color: #0056b3;
+}
+
+.card-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.card-icons img {
+    width: 40px;
+    height: 25px;
+}
+
+.tooltip {
+    cursor: pointer;
+    font-weight: bold;
+    color: #007bff;
+   
+}
